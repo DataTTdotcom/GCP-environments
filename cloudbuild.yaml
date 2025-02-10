@@ -1,4 +1,10 @@
 steps:
+  - name: "ubuntu"
+  - id: "Check for terraform destroy"
+  - entrypoint: "/bin/bash"
+  - args:
+    - '-c'
+    - './check_terraform_destroy.sh'  # Run the check script
   - name: 'hashicorp/terraform:1.7.1'
     args:
       - '-c'
