@@ -1,0 +1,26 @@
+steps:
+  - name: 'hashicorp/terraform:1.7.1'
+    args:
+      - '-c'
+      - |
+        terraform init
+    id: tf init
+    entrypoint: sh
+  - name: 'hashicorp/terraform:1.7.1'
+    args:
+      - '-c'
+      - |
+        terraform plan
+    id: tf plan
+    entrypoint: sh
+  - name: 'hashicorp/terraform:1.7.1'
+    args:
+      - '-c'
+      - |
+        if [ "${BRANCH_NAME}" == "develop" ] ;then
+            terraform apply -input=false -auto-approve
+        fi
+    id: tf apply
+    entrypoint: sh
+options:
+  logging: CLOUD_LOGGING_ONLY
