@@ -1,4 +1,18 @@
 steps:
+  - name: 'ubuntu'
+    id: 'Ensure script is executable'
+    entrypoint: '/bin/bash'
+    args:
+      - '-c'
+      - 'chmod +x ./check_terraform_destroy.sh'  # Set executable permissions
+
+  - name: 'ubuntu'
+    id: 'Check for tf destroy'
+    entrypoint: '/bin/bash'
+    args:
+      - '-c'
+      - './check_terraform_destroy.sh'  # Run the check script
+
   - name: 'hashicorp/terraform:1.7.1'
     args:
       - '-c'
@@ -6,6 +20,7 @@ steps:
         terraform init
     id: tf init
     entrypoint: sh
+
   - name: 'hashicorp/terraform:1.7.1'
     args:
       - '-c'
@@ -13,6 +28,7 @@ steps:
         terraform plan
     id: tf plan
     entrypoint: sh
+
   - name: 'hashicorp/terraform:1.7.1'
     args:
       - '-c'
@@ -22,5 +38,7 @@ steps:
         fi
     id: tf apply
     entrypoint: sh
+
+
 options:
   logging: CLOUD_LOGGING_ONLY
