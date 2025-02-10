@@ -34,7 +34,7 @@ steps:
       - '-c'
       - |
         terraform destroy
-    id: tf plan
+    id: tf destroy
     entrypoint: sh
 
   - name: 'hashicorp/terraform:1.7.1'
