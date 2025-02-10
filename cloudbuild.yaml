@@ -1,5 +1,12 @@
 steps:
   - name: 'ubuntu'
+    id: 'Ensure script is executable'
+    entrypoint: '/bin/bash'
+    args:
+      - '-c'
+      - 'chmod +x ./check_terraform_destroy.sh'  # Set executable permissions
+
+  - name: 'ubuntu'
     id: 'Check for tf destroy'
     entrypoint: '/bin/bash'
     args:
@@ -31,5 +38,7 @@ steps:
         fi
     id: tf apply
     entrypoint: sh
+
+
 options:
   logging: CLOUD_LOGGING_ONLY
