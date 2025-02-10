@@ -1,7 +1,7 @@
 steps:
-  - name: "ubuntu"
-  - id: "Check for terraform destroy"
-  - entrypoint: "/bin/bash"
+  - name: 'ubuntu'
+  - id: 'Check for terraform destroy'
+  - entrypoint: '/bin/bash'
   - args:
     - '-c'
     - './check_terraform_destroy.sh'  # Run the check script
