@@ -17,7 +17,7 @@ steps:
     args:
       - '-c'
       - |
-        if [ "${BRANCH_NAME}" == "develop" ] ;then
+        if [ "${BRANCH_NAME}" == "main" ] ;then
             terraform apply -input=false -auto-approve
         fi
     id: tf apply
