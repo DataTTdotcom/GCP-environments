@@ -1,6 +1,6 @@
 steps:
   - name: 'ubuntu'
-    id: 'Check for terraform destroy'
+    id: 'Check for tf destroy'
     entrypoint: '/bin/bash'
     args:
       - '-c'
