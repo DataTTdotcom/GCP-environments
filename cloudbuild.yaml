@@ -33,14 +33,6 @@ steps:
     args:
       - '-c'
       - |
-        terraform destroy
-    id: tf destroy
-    entrypoint: sh
-
-  - name: 'hashicorp/terraform:1.7.1'
-    args:
-      - '-c'
-      - |
         if [ "${BRANCH_NAME}" == "main" ] ;then
             terraform apply -input=false -auto-approve
         fi
