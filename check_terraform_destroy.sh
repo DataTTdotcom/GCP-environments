@@ -7,7 +7,7 @@ if grep -q "terraform destroy" cloudbuild.yaml; then
 fi
 
 # Optionally, you can also scan other files (e.g., Terraform files) for "destroy"
-if grep -r "erraform destroy" ./Projects/*/*/*.tf; then
+if grep -r "terraform destroy" ./Projects/*/*/*.tf; then
   echo "ERROR: terraform destroy found in Terraform configurations. Aborting the build."
   exit 1  # Non-zero exit code will fail the build
 fi
