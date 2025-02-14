@@ -7,7 +7,16 @@ module "projects-time-poc" {
   bindings = {
 
     "roles/bigquery.dataViewer" = [
-      "user:praveen.ram.kannan@time.com.my"
+      "user:praveen.ram.kannan@time.com.my",
+      "user:lim.koksang@time.com.my"
+    ]
+
+    "roles/bigquery.jobUser" = [
+      "user:lim.koksang@time.com.my"
+    ]
+
+    "roles/bigquery.user" = [
+      "user:lim.koksang@time.com.my"
     ]
 
   }
