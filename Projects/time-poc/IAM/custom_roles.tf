@@ -11,7 +11,6 @@ resource "google_project_iam_custom_role" "custom_role" {
     "bigquery.jobs.create",
     "bigquery.jobs.list",
     "bigquery.jobs.get",
-    "bigquery.jobs.cancel",
     "bigquery.datasets.get",
     "bigquery.tables.get",
     "bigquery.tables.list",
