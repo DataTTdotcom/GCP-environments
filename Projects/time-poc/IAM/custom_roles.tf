@@ -19,3 +19,5 @@ resource "google_project_iam_custom_role" "custom_role" {
   ]
   stage = "GA"  # Options: ALPHA, BETA, GA
 }
+
+
