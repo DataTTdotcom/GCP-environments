@@ -10,9 +10,5 @@ module "projects-time-poc" {
       "user:praveen.ram.kannan@time.com.my"
     ]
 
-    "roles/DataEngineeringRole" = [
-        "user:lim.koksang@time.com.my"
-        ]
-
   }
 }
