@@ -10,7 +10,7 @@ module "projects-time-poc" {
       "user:praveen.ram.kannan@time.com.my"
     ]
 
-    "roles/DataEngineeringRole" = [
+    "projects/time-poc-424210/roles/DataEngineeringRole" = [
         "user:lim.koksang@time.com.my"
         ]
 
