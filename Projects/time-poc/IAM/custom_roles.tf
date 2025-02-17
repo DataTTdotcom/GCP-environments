@@ -12,7 +12,7 @@ resource "google_project_iam_custom_role" "custom_role" {
     "bigquery.jobs.list",
     "bigquery.jobs.get",
     "bigquery.datasets.get",
-    "bigquery.datasets.list"
+    "bigquery.datasets.list",
     "bigquery.tables.get",
     "bigquery.tables.list",
     "bigquery.tables.getData"
