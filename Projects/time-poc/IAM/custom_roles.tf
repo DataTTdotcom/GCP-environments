@@ -60,8 +60,6 @@ resource "google_project_iam_custom_role" "custom_role" {
 
 #   GCS viewer
 
-    "resourcemanager.projects.get",
-    "resourcemanager.projects.list",
     "storage.folders.get",
     "storage.folders.list",
     "storage.managedFolders.get",
