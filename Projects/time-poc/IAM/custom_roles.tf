@@ -57,8 +57,6 @@ resource "google_project_iam_custom_role" "custom_role" {
     "dataform.repositories.create",
     "dataform.repositories.list",
     "dataplex.projects.search",
-    "resourcemanager.projects.get",
-    "resourcemanager.projects.list",
 
 #   GCS viewer
 
