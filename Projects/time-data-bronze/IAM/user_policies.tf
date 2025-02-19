@@ -10,5 +10,9 @@ module "projects-time-data-bronze" {
       "user:praveen.ram.kannan@time.com.my"
     ]
 
+    "projects/time-data-bronze/roles/DataEngineeringRole" = [
+        "user:lim.koksang@time.com.my"
+        ]
+
   }
 }
