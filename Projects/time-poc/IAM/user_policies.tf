@@ -16,3 +16,12 @@ module "projects-time-poc" {
 
   }
 }
+
+resource "google_organization_iam_binding" "assign_deny_admin" {
+  org_id = "715611036669"
+
+  role    = "roles/iam.denyAdmin"
+  members = [
+    "user:praveen.ram.kannan@time.com.my",
+  ]
+}
