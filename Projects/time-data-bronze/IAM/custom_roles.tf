@@ -81,7 +81,7 @@ resource "google_project_iam_custom_role" "custom_role" {
     "secretmanager.secrets.listTagBindings",
     "secretmanager.versions.get",
     "secretmanager.versions.list",
-    "secretmanager.versions.access"
+    "secretmanager.versions.access",
 
 #   composer user
 
