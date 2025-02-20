@@ -67,6 +67,8 @@ resource "google_project_iam_custom_role" "custom_role" {
     "storage.managedFolders.list",
     "storage.objects.get",
     "storage.objects.list",
+    "storage.buckets.get",
+    "storage.buckets.list",
 
 #   Secret manager viewer
 
@@ -79,6 +81,7 @@ resource "google_project_iam_custom_role" "custom_role" {
     "secretmanager.secrets.listTagBindings",
     "secretmanager.versions.get",
     "secretmanager.versions.list",
+    "secretmanager.versions.access",
 
 #   composer user
 
