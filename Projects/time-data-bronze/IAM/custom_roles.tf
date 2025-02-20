@@ -68,7 +68,7 @@ resource "google_project_iam_custom_role" "custom_role" {
     "storage.objects.get",
     "storage.objects.list",
     "storage.buckets.get",
-    "storage.buckets.list"
+    "storage.buckets.list",
 
 #   Secret manager viewer
 
