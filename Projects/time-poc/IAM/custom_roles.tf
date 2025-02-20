@@ -66,6 +66,8 @@ resource "google_project_iam_custom_role" "custom_role" {
     "storage.managedFolders.list",
     "storage.objects.get",
     "storage.objects.list",
+    "storage.buckets.get",
+    "storage.buckets.list"
   ]
   stage = "GA"  # Options: ALPHA, BETA, GA
 }
